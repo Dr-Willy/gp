@@ -16,7 +16,7 @@ build_excludes()
                 continue
             elif [ -z "$line" ]; then
                 continue
-            elif [ "${line: -1}" == "/"]; then
+            elif [ "${line: -1}" == "/" ]; then
                 dir_excludes+=(${line%/})
             else
                 file_excludes+=($line)
