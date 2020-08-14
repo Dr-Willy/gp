@@ -28,5 +28,5 @@ build_excludes()
 build_excludes $local_exclude
 build_excludes $global_exclude
 
-grep --color ${dir_excludes[@]/#/--exculde-dir=} ${file_excludes[@]/#/--exclude=} "${@:1}"
+grep --color ${dir_excludes[@]/#/--exclude-dir=} ${file_excludes[@]/#/--exclude=} "${@:1}"
 
